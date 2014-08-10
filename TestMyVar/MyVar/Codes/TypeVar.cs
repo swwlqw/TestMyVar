@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace SVar.Codes
 {
-
+    [DataContract]
     public partial class TypeVar<T> : DVar
     {
-
+        [DataMember]
         private T obj;
+
         public TypeVar(T obj) {
             this.obj = obj;
         }

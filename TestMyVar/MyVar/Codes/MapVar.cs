@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace SVar.Codes
 {
-
+    [DataContract]
     public partial class MapVar : DVar
     {
-      
+        [DataMember]
         private Dictionary<string, DVar> dictionary = new Dictionary<string, DVar>();
         public override DVar this[string key]
         {

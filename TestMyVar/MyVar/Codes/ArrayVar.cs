@@ -8,8 +8,10 @@ using System.ServiceModel;
 
 namespace SVar.Codes
 {
+    [DataContract]
     public partial class ArrayVar :DVar
     {
+        [DataMember]
         private List<DVar> list = new List<DVar>();
 
         public override DVar this[string key]

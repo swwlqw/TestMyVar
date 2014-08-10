@@ -7,6 +7,13 @@ using System.Threading.Tasks;
 
 namespace SVar.Codes
 {
+    [DataContract]
+    [KnownType(typeof(MapVar))]
+    [KnownType(typeof(ArrayVar))]
+    [KnownType(typeof(TypeVar<int>))]
+    [KnownType(typeof(TypeVar<string>))]
+    [KnownType(typeof(TypeVar<DateTime>))]
+    [KnownType(typeof(TypeVar<double>))]
 
     public abstract partial class DVar
     {
