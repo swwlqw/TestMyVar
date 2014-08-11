@@ -46,5 +46,9 @@ namespace SVar.Codes
         {
             return dictionary.Count();
         }
+        public Dictionary<string,DVar> getDictionary()
+        {
+            return dictionary;
+        }
     }
 }
